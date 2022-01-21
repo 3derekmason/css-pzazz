@@ -1,0 +1,14 @@
+{
+  "name": "css-pzazz",
+  "version": "1.0.0",
+  "description": "Having some fun playing with mainly CSS",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm live-server"
+  },
+  "author": "Derek Mason",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
