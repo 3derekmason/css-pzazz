@@ -9,8 +9,13 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: radial-gradient(#2e2e2e, #333);
+  background: url(./bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/* * * * * HIGHWAY * * * * */
 
 .infinite {
   position: relative;
@@ -67,7 +72,46 @@
   width: 95%;
   transform: translateX(-50%);
   height: 60px;
-  background: #f00;
   bottom: -93px;
   background: linear-gradient(rgba(0, 0, 0, 0.25), transparent);
+}
+
+/* * * * * Box * * * * */
+
+.box {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, transparent, #0004);
+  animation: animateBox 1s linear infinite;
+}
+
+@keyframes animateBox {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+
+.square {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(#00b0ff, #40c4ff, #80d8ff);
+  transform-origin: bottom right;
+  animation: spins 1s linear infinite;
+}
+
+@keyframes spins {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
 }
