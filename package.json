@@ -4,7 +4,7 @@
   "description": "Having some fun playing with mainly CSS",
   "main": "index.js",
   "scripts": {
-    "start": "npm live-server"
+    "start": "live-server"
   },
   "author": "Derek Mason",
   "license": "ISC",
