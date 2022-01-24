@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ddd;
+}
+
+.container {
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 23rem;
+  transform-style: preserve-3d;
+}
+
+.container .front {
+  transition: 0.8s;
+}
+
+.container .front img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.container .back {
+  transition: 0.8s;
+}
+
+.flipCard {
+  position: relative;
+  transition: 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flipCard .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  z-index: 100;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.flipCard .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  z-index: 99;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  width: 200px;
+  height: 300px;
+  transform: rotateY(180deg);
+}
+
+.container:hover .front {
+  transform: rotateY(-180deg);
+  transition: 0.8s;
+}
+
+.container:hover .back {
+  transform: rotateY(0deg);
+  transition: 0.8s;
+}
