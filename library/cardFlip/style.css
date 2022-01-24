@@ -11,7 +11,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  perspective: 23rem;
+  perspective: 750px;
   transform-style: preserve-3d;
 }
 
