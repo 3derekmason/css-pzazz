@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <!-- <CardFlip /> -->
-    <HighwayScroll />
+    <!-- <HighwayScroll /> -->
+    <WobbleIn />
   </div>
 </template>
 
 <script>
 // import CardFlip from "./components/CardFlip.vue";
-import HighwayScroll from "./components/HighwayScroll.vue";
+// import HighwayScroll from "./components/HighwayScroll.vue";
+import WobbleIn from "./components/WobbleIn.vue";
 
 export default {
   name: "App",
   components: {
     // CardFlip,
-    HighwayScroll,
+    // HighwayScroll,
+    WobbleIn,
   },
 };
 </script>
