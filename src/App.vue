@@ -1,16 +1,19 @@
 <template>
   <div id="app">
-    <CardFlip />
+    <!-- <CardFlip /> -->
+    <HighwayScroll />
   </div>
 </template>
 
 <script>
-import CardFlip from "./components/CardFlip.vue";
+// import CardFlip from "./components/CardFlip.vue";
+import HighwayScroll from "./components/HighwayScroll.vue";
 
 export default {
   name: "App",
   components: {
-    CardFlip,
+    // CardFlip,
+    HighwayScroll,
   },
 };
 </script>
