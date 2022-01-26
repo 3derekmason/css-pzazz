@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import CardFlip from "./CardFlip.vue";
-import WaterDrop from "./WaterDrop.vue";
+import CardFlip from "../components/CardFlip.vue";
+import WaterDrop from "../components/WaterDrop.vue";
 
 export default {
   name: "ComponentView",
