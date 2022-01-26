@@ -3,7 +3,8 @@
     <!-- <CardFlip /> -->
     <!-- <HighwayScroll /> -->
     <!-- <WobbleIn /> -->
-    <WaterDrop />
+    <!-- <WaterDrop /> -->
+    <ComponentView />
   </div>
 </template>
 
@@ -11,7 +12,8 @@
 // import CardFlip from "./components/CardFlip.vue";
 // import HighwayScroll from "./components/HighwayScroll.vue";
 // import WobbleIn from "./components/WobbleIn.vue";
-import WaterDrop from "./components/WaterDrop.vue";
+// import WaterDrop from "./components/WaterDrop.vue";
+import ComponentView from "./components/ComponentView.vue";
 
 export default {
   name: "App",
@@ -19,7 +21,8 @@ export default {
     // CardFlip,
     // HighwayScroll,
     // WobbleIn,
-    WaterDrop,
+    // WaterDrop,
+    ComponentView,
   },
 };
 </script>
@@ -31,6 +34,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
