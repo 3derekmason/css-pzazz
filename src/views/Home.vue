@@ -23,6 +23,14 @@ export default {
 </script>
 
 <style>
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .nav {
   display: flex;
   justify-content: center;
