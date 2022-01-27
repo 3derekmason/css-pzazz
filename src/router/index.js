@@ -1,31 +1,32 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-import ComponentView from "../views/ComponentView.vue";
+// // import VueRouter from "vue-router";
+// import { createRouter, createWebHistory } from "vue-router";
+// import { createApp } from "vue";
+// import Home from "../views/Home.vue";
+// import About from "../views/About.vue";
+// // import ComponentView from "../views/ComponentView.vue";
 
-Vue.use(VueRouter);
+// const routes = [
+//   {
+//     path: "/",
+//     component: Home,
+//   },
+//   {
+//     path: "/about",
+//     component: About,
+//   },
+//   // {
+//   //   path: "/views",
+//   //   component: ComponentView,
+//   // },
+// ];
 
-const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/about",
-    name: "About",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
-  {
-    path: "/views",
-    name: "Views",
-    component: ComponentView,
-  },
-];
+// // const router = createRouter({
+// //   routes,
+// // });
 
-const router = new VueRouter({
-  routes,
-});
+// const router = createRouter({
+//   history: createWebHistory(),
+//   routes,
+// });
 
-export default router;
+// createApp(router).mount("#app");

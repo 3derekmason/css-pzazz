@@ -1,10 +1,27 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp, h } from "vue";
+import Home from "./views/Home.vue";
+import About from "./views/About.vue";
 
-Vue.config.productionTip = false
+const NotFoundComponent = { template: "<p>Page not found</p>" };
 
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
+const routes = {
+  "/": Home,
+  "/about": About,
+};
+
+const router = {
+  data: () => ({
+    currentRoute: window.location.pathname,
+  }),
+  computed: {
+    CurrentComponent() {
+      return routes[this.currentRoute] || NotFoundComponent;
+    },
+  },
+
+  render() {
+    return h(this.CurrentComponent);
+  },
+};
+
+createApp(router).mount("#app");
