@@ -1,4 +1,4 @@
-import { createApp, h } from "vue";
+const { createApp, h } = Vue;
 import Home from "./views/Home.vue";
 import About from "./views/About.vue";
 
