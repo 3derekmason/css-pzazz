@@ -1,8 +1,18 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
     <router-link :to="{ name: 'HomePage' }">Home</router-link>
-    <router-view />
+
+    <h1>About Css Pizazz</h1>
+    <h3>
+      Just a little place made with Vue3 to show off some animations I've been
+      playing around with!
+    </h3>
+    <p>By Derek Mason</p>
+    <h5>
+      <a href="https://github.com/3derekmason/css-pzazz" target="_new"
+        >View this code and more at my github profile</a
+      >
+    </h5>
   </div>
 </template>
 
@@ -11,3 +21,21 @@ export default {
   name: "AboutPage",
 };
 </script>
+
+<style scoped>
+a:visited {
+  color: #fff;
+}
+a:hover {
+  color: #1de9b6;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  color: #fff;
+  flex-direction: column;
+}
+</style>
