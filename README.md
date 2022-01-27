@@ -2,7 +2,7 @@
 
 ## Description
 
-Just a little place to show off some animations I've been playing around with!
+Just a little place made with Vue3 to show off some animations I've been playing around with!
 
 - [Link to deployed app](csspizazz.herokuapp.com)
 
