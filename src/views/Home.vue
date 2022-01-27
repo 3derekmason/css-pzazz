@@ -6,6 +6,7 @@
       </button>
     </div>
     <img alt="Vue logo" src="../assets/logo.png" />
+    <h1><strong>Css Pizazz</strong> <em>with Vue</em></h1>
     <div class="nav">
       <button class="homeBtn third">
         <router-link to="/cardflip">Card Flip</router-link>
@@ -46,6 +47,11 @@ a {
 }
 .home a:hover {
   color: #009688;
+}
+h1 {
+  color: #1de9b6;
+  font-variant: small-caps;
+  letter-spacing: 2px;
 }
 
 .home {

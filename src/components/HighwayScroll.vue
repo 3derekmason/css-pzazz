@@ -33,6 +33,7 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  width: 100vw;
   background: #e1f5fe;
 }
 

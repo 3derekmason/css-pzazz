@@ -3,11 +3,12 @@
     <router-link :to="{ name: 'HomePage' }">Home</router-link>
 
     <h1>About Css Pizazz</h1>
+    <p>By Derek Mason</p>
     <h3>
       Just a little place made with Vue3 to show off some animations I've been
-      playing around with!
+      playing around with! Most animations are entirely CSS built into the Vue
+      components. I hope you enjoy!
     </h3>
-    <p>By Derek Mason</p>
     <h5>
       <a href="https://github.com/3derekmason/css-pzazz" target="_new"
         >View this code and more at my github profile</a
@@ -31,6 +32,7 @@ a:hover {
 }
 
 .about {
+  width: 50vw;
   display: flex;
   justify-content: center;
   align-items: center;
