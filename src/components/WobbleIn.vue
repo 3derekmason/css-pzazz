@@ -1,10 +1,16 @@
 <template>
-  <div class="container">
-    <div class="wordsBottom">
-      <h2>WORDS</h2>
+  <div>
+    <div class="homelink">
+      <router-link :to="{ name: 'HomePage' }">Home</router-link>
+      <router-view />
     </div>
-    <div class="wordsTop">
-      <h2>WORDS</h2>
+    <div class="container">
+      <div class="wordsBottom">
+        <h2>WORDS</h2>
+      </div>
+      <div class="wordsTop">
+        <h2>WORDS</h2>
+      </div>
     </div>
   </div>
 </template>
@@ -69,5 +75,14 @@ export default {
   100% {
     transform: rotate(-3deg);
   }
+}
+
+.homelink {
+  color: #fff;
+  text-decoration: none;
+  z-index: 10000;
+  width: 100vw;
+  position: absolute;
+  text-align: center;
 }
 </style>

@@ -1,6 +1,12 @@
 <template>
-  <div class="container">
-    <div class="drop"></div>
+  <div>
+    <div class="homelink">
+      <router-link :to="{ name: 'HomePage' }">Home</router-link>
+      <router-view />
+    </div>
+    <div class="container">
+      <div class="drop"></div>
+    </div>
   </div>
 </template>
 
@@ -55,5 +61,11 @@ export default {
   height: 10px;
   border-radius: 50%;
   background: #fff;
+}
+
+.homelink {
+  width: 100vw;
+  position: absolute;
+  text-align: center;
 }
 </style>

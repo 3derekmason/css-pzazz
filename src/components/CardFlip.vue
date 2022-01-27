@@ -1,8 +1,14 @@
 <template>
-  <div class="container">
-    <div class="flipCard">
-      <div class="front"><img src="../../library/cardFlip/card.png" /></div>
-      <div class="back"></div>
+  <div>
+    <div class="container">
+      <div class="flipCard">
+        <div class="front"><img src="../../library/cardFlip/card.png" /></div>
+        <div class="back"></div>
+      </div>
+    </div>
+    <div>
+      <router-link :to="{ name: 'HomePage' }">Home</router-link>
+      <router-view />
     </div>
   </div>
 </template>

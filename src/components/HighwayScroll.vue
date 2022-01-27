@@ -1,10 +1,16 @@
 <template>
-  <div class="container">
-    <div class="infinite">
-      <div class="shadow"></div>
+  <div>
+    <div class="homelink">
+      <router-link :to="{ name: 'HomePage' }">Home</router-link>
+      <router-view />
     </div>
-    <div class="box">
-      <div class="square"></div>
+    <div class="container">
+      <div class="infinite">
+        <div class="shadow"></div>
+      </div>
+      <div class="box">
+        <div class="square"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -130,5 +136,11 @@ export default {
   100% {
     transform: rotate(90deg);
   }
+}
+
+.homelink {
+  width: 100vw;
+  position: absolute;
+  text-align: center;
 }
 </style>
