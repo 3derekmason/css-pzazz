@@ -1,8 +1,7 @@
 <template>
   <div>
     <div class="homelink">
-      <router-link :to="{ name: 'HomePage' }">Home</router-link>
-      <router-view />
+      <p class="animated-word"><a href="/">Home</a></p>
     </div>
     <section>
       <span></span>
@@ -512,14 +511,20 @@ export default {
 </script>
 
 <style scoped>
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+a {
+  color: #009688;
+}
+a:hover {
+  color: #1de9b6;
+}
 section {
   position: relative;
+  margin: 0;
   width: 100%;
   height: 100vh;
   background: #212121;
@@ -563,5 +568,33 @@ span::before {
 span:hover::before {
   transform: scale(1);
   transition: 0s;
+}
+
+.homelink {
+  height: 32px;
+  width: 100%;
+  background: linear-gradient(#212121, #263238, #212121);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animated-word {
+  font-family: Helvetica;
+  letter-spacing: 0.4em;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #009688;
+  cursor: pointer;
+  max-width: 160px;
+  outline: 3px solid;
+  outline-color: rgba(20, 233, 182, 0.5);
+  outline-offset: 70px;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+  outline-color: rgba(20, 233, 182, 0);
+  outline-offset: 300px;
 }
 </style>
