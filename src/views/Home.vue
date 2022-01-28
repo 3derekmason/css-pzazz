@@ -1,9 +1,7 @@
 <template>
   <div class="home">
-    <div>
-      <button class="homeBtn second">
-        <router-link to="/about">About</router-link>
-      </button>
+    <div class="homelink">
+      <p class="animated-word"><a href="/about">About</a></p>
     </div>
     <img alt="Vue logo" src="../assets/logo.png" />
     <h1><strong>Css Pizazz</strong> <em>with Vue</em></h1>
@@ -41,6 +39,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 .home a:visited {
   color: #fff;
@@ -94,108 +93,34 @@ h1 {
   color: #00796b;
 }
 
-.second {
-  margin-left: 16px;
-  margin-right: 16px;
-  height: fit-content;
-  width: fit-content;
-  font-size: 1.5em;
-  border-radius: 4px;
-  border-color: #1abc9c;
-  color: #fff;
-  background-image: -webkit-linear-gradient(
-    left,
-    rgba(26, 188, 156, 0.6),
-    rgba(26, 188, 156, 0.6) 5%,
-    #009688 5%,
-    #009688 10%,
-    rgba(26, 188, 156, 0.6) 10%,
-    rgba(26, 188, 156, 0.6) 15%,
-    #009688 15%,
-    #009688 20%,
-    rgba(26, 188, 156, 0.6) 20%,
-    rgba(26, 188, 156, 0.6) 25%,
-    #009688 25%,
-    #009688 30%,
-    rgba(26, 188, 156, 0.6) 30%,
-    rgba(26, 188, 156, 0.6) 35%,
-    #009688 35%,
-    #009688 40%,
-    rgba(26, 188, 156, 0.6) 40%,
-    rgba(26, 188, 156, 0.6) 45%,
-    #009688 45%,
-    #009688 50%,
-    rgba(26, 188, 156, 0.6) 50%,
-    rgba(26, 188, 156, 0.6) 55%,
-    #009688 55%,
-    #009688 60%,
-    rgba(26, 188, 156, 0.6) 60%,
-    rgba(26, 188, 156, 0.6) 65%,
-    #009688 65%,
-    #009688 70%,
-    rgba(26, 188, 156, 0.6) 70%,
-    rgba(26, 188, 156, 0.6) 75%,
-    #009688 75%,
-    #009688 80%,
-    rgba(26, 188, 156, 0.6) 80%,
-    rgba(26, 188, 156, 0.6) 85%,
-    #009688 85%,
-    #009688 90%,
-    rgba(26, 188, 156, 0.6) 90%,
-    rgba(26, 188, 156, 0.6) 95%,
-    #009688 95%,
-    #009688 100%
-  );
-  background-image: linear-gradient(
-    to right,
-    rgba(26, 188, 156, 0.6),
-    rgba(26, 188, 156, 0.6) 5%,
-    #009688 5%,
-    #009688 10%,
-    rgba(26, 188, 156, 0.6) 10%,
-    rgba(26, 188, 156, 0.6) 15%,
-    #009688 15%,
-    #009688 20%,
-    rgba(26, 188, 156, 0.6) 20%,
-    rgba(26, 188, 156, 0.6) 25%,
-    #009688 25%,
-    #009688 30%,
-    rgba(26, 188, 156, 0.6) 30%,
-    rgba(26, 188, 156, 0.6) 35%,
-    #009688 35%,
-    #009688 40%,
-    rgba(26, 188, 156, 0.6) 40%,
-    rgba(26, 188, 156, 0.6) 45%,
-    #009688 45%,
-    #009688 50%,
-    rgba(26, 188, 156, 0.6) 50%,
-    rgba(26, 188, 156, 0.6) 55%,
-    #009688 55%,
-    #009688 60%,
-    rgba(26, 188, 156, 0.6) 60%,
-    rgba(26, 188, 156, 0.6) 65%,
-    #009688 65%,
-    #009688 70%,
-    rgba(26, 188, 156, 0.6) 70%,
-    rgba(26, 188, 156, 0.6) 75%,
-    #009688 75%,
-    #009688 80%,
-    rgba(26, 188, 156, 0.6) 80%,
-    rgba(26, 188, 156, 0.6) 85%,
-    #009688 85%,
-    #009688 90%,
-    rgba(26, 188, 156, 0.6) 90%,
-    rgba(26, 188, 156, 0.6) 95%,
-    #009688 95%,
-    #009688 100%
-  );
-  background-position: 0 0;
-  background-size: 100%;
-  -webkit-transition: background 300ms ease-in-out;
-  transition: background 300ms ease-in-out;
+.homelink {
+  text-decoration: none;
+  z-index: 10000;
+  width: 100vw;
+  margin-top: 32px;
+  max-height: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.second:hover {
-  background-position: 100px;
-  color: #fff;
+.animated-word {
+  font-family: Helvetica;
+  letter-spacing: 0.4em;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #009688;
+  cursor: pointer;
+  max-width: 160px;
+  outline: 3px solid;
+  outline-color: rgba(20, 233, 182, 0.5);
+  outline-offset: 16px;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+  outline-color: rgba(20, 233, 182, 0);
+  outline-offset: 300px;
 }
 </style>
