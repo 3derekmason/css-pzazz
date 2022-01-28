@@ -20,6 +20,9 @@
       <button class="homeBtn third">
         <router-link to="/wobblein">Wobble In</router-link>
       </button>
+      <button class="homeBtn third">
+        <router-link to="/glowingDotHover">Glowing Dot Hover</router-link>
+      </button>
       <router-view />
     </div>
   </div>

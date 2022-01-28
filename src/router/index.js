@@ -5,6 +5,7 @@ import CardFlip from "../components/CardFlip.vue";
 import HighwayScroll from "../components/HighwayScroll.vue";
 import WaterDrop from "../components/WaterDrop.vue";
 import WobbleIn from "../components/WobbleIn.vue";
+import GlowingDotHover from "../components/GlowingDotHover.vue";
 
 const routes = [
   {
@@ -36,6 +37,11 @@ const routes = [
     path: "/wobblein",
     name: "WobbleIn",
     component: WobbleIn,
+  },
+  {
+    path: "/glowingDotHover",
+    name: "GlowingDotHover",
+    component: GlowingDotHover,
   },
 ];
 
