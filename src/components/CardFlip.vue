@@ -120,7 +120,7 @@ a:hover {
   max-width: 160px;
   outline: 3px solid;
   outline-color: rgba(20, 233, 182, 0.5);
-  outline-offset: 24px;
+  outline-offset: 16px;
   transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
 }
 
