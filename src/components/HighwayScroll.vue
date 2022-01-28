@@ -1,8 +1,7 @@
 <template>
   <div>
     <div class="homelink">
-      <router-link :to="{ name: 'HomePage' }">Home</router-link>
-      <router-view />
+      <p class="animated-word"><a href="/">Home</a></p>
     </div>
     <div class="container">
       <div class="infinite">
@@ -26,6 +25,13 @@ export default {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+a {
+  color: #ff0;
+}
+a:hover {
+  color: #80d8ff;
 }
 
 .container {
@@ -140,8 +146,31 @@ export default {
 }
 
 .homelink {
-  width: 100vw;
-  position: absolute;
+  margin-top: 16px;
+  max-height: 16px;
+  width: 100%;
+  background: linear-gradient(#212121, #e1f5fe);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animated-word {
+  font-family: Helvetica;
+  letter-spacing: 0.4em;
+  font-weight: 600;
+  font-size: 16px;
   text-align: center;
+  color: #009688;
+  cursor: pointer;
+  max-width: 160px;
+  outline: 3px solid;
+  outline-color: rgba(233, 233, 0, 0.5);
+  outline-offset: 8px;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+  outline-color: rgba(20, 233, 182, 0);
+  outline-offset: 300px;
 }
 </style>
