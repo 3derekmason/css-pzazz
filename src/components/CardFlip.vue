@@ -101,10 +101,12 @@ a:hover {
 }
 
 .homelink {
+  text-decoration: none;
+  z-index: 10000;
+  width: 100vw;
   margin-top: 32px;
   max-height: 16px;
   width: 100%;
-  background: linear-gradient(#212121, #263238, #212121);
   display: flex;
   align-items: center;
   justify-content: center;
