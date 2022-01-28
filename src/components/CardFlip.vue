@@ -6,9 +6,8 @@
         <div class="back"></div>
       </div>
     </div>
-    <div>
-      <router-link :to="{ name: 'HomePage' }">Home</router-link>
-      <router-view />
+    <div class="homelink">
+      <p class="animated-word"><a href="/">Home</a></p>
     </div>
   </div>
 </template>
@@ -20,10 +19,11 @@ export default {
 </script>
 
 <style language="css" scoped>
-#app {
-  margin: 0;
-  padding: 0;
-  background: #ddd;
+a {
+  color: #009688;
+}
+a:hover {
+  color: #1de9b6;
 }
 
 .container {
@@ -98,5 +98,34 @@ export default {
 .container:hover .back {
   transform: rotateY(0deg);
   transition: 0.8s;
+}
+
+.homelink {
+  margin-top: 32px;
+  max-height: 16px;
+  width: 100%;
+  background: linear-gradient(#212121, #263238, #212121);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animated-word {
+  font-family: Helvetica;
+  letter-spacing: 0.4em;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  color: #009688;
+  cursor: pointer;
+  max-width: 160px;
+  outline: 3px solid;
+  outline-color: rgba(20, 233, 182, 0.5);
+  outline-offset: 24px;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+  outline-color: rgba(20, 233, 182, 0);
+  outline-offset: 300px;
 }
 </style>
